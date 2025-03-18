@@ -254,37 +254,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 142737715}
   m_CullTransparentMesh: 1
---- !u!1 &233921828
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 233921829}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &233921829
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 233921828}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &249610715
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,7 +503,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.495283, g: 0.6915618, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1938,6 +1907,7 @@ GameObject:
   - component: {fileID: 1973226785}
   - component: {fileID: 1973226784}
   - component: {fileID: 1973226783}
+  - component: {fileID: 1973226787}
   m_Layer: 5
   m_Name: EnemyText
   m_TagString: Untagged
@@ -2106,6 +2076,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1973226781}
   m_CullTransparentMesh: 1
+--- !u!114 &1973226787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973226781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe8564a99415d18449ab78b6e09d526c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2009703911
 GameObject:
   m_ObjectHideFlags: 0
@@ -2233,16 +2215,40 @@ PrefabInstance:
       objectReference: {fileID: 549751985}
     - target: {fileID: 1216692564632570329, guid: 2fd0ee82709720b4da70cd6d3d2cfb83, type: 3}
       propertyPath: obstacles.Array.size
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1216692564632570329, guid: 2fd0ee82709720b4da70cd6d3d2cfb83, type: 3}
       propertyPath: 'obstacles.Array.data[0]'
       value: 
-      objectReference: {fileID: 4335085913116716620, guid: e325e2d39833258478cad9bb0873fb43, type: 3}
+      objectReference: {fileID: 4335085913116716620, guid: 59b32c3949eaf1545ac74bb9d17e8b31, type: 3}
     - target: {fileID: 1216692564632570329, guid: 2fd0ee82709720b4da70cd6d3d2cfb83, type: 3}
       propertyPath: 'obstacles.Array.data[1]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4335085913116716620, guid: 9384a008c5ed38840a1cb7ad5ce34d29, type: 3}
+    - target: {fileID: 1216692564632570329, guid: 2fd0ee82709720b4da70cd6d3d2cfb83, type: 3}
+      propertyPath: 'obstacles.Array.data[2]'
+      value: 
+      objectReference: {fileID: 4335085913116716620, guid: ae0a9c5e4fd6ad5499ce46cdcd10ef5c, type: 3}
+    - target: {fileID: 1216692564632570329, guid: 2fd0ee82709720b4da70cd6d3d2cfb83, type: 3}
+      propertyPath: 'obstacles.Array.data[3]'
+      value: 
+      objectReference: {fileID: 4335085913116716620, guid: e325e2d39833258478cad9bb0873fb43, type: 3}
+    - target: {fileID: 1216692564632570329, guid: 2fd0ee82709720b4da70cd6d3d2cfb83, type: 3}
+      propertyPath: 'obstacles.Array.data[4]'
+      value: 
+      objectReference: {fileID: 4335085913116716620, guid: e498320349ab4ab41b71acb23367cd87, type: 3}
+    - target: {fileID: 1216692564632570329, guid: 2fd0ee82709720b4da70cd6d3d2cfb83, type: 3}
+      propertyPath: 'obstacles.Array.data[5]'
+      value: 
+      objectReference: {fileID: 4335085913116716620, guid: c5d6288428841d241ac62fa3d7ac144e, type: 3}
+    - target: {fileID: 1216692564632570329, guid: 2fd0ee82709720b4da70cd6d3d2cfb83, type: 3}
+      propertyPath: 'obstacles.Array.data[6]'
+      value: 
+      objectReference: {fileID: 4335085913116716620, guid: bc8087e63b5ae2041afc65184a1126cf, type: 3}
+    - target: {fileID: 1216692564632570329, guid: 2fd0ee82709720b4da70cd6d3d2cfb83, type: 3}
+      propertyPath: 'obstacles.Array.data[7]'
+      value: 
+      objectReference: {fileID: 4335085913116716620, guid: 6ef933238b489b4459ca66a0ed9292c2, type: 3}
     - target: {fileID: 1667613857389644713, guid: 2fd0ee82709720b4da70cd6d3d2cfb83, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2307,4 +2313,3 @@ SceneRoots:
   - {fileID: 804619797}
   - {fileID: 2074168827}
   - {fileID: 1147749505}
-  - {fileID: 233921829}
