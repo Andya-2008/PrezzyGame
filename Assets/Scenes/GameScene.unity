@@ -1399,7 +1399,7 @@ MonoBehaviour:
   flapForce: 300
   shootSpeed: 400
   shootObj: {fileID: 8986771246678049383, guid: 65234129c98757d42801250ab12af921, type: 3}
-  shootInterval: 0.2
+  shootInterval: 0.1
   shootPos: {fileID: 2009703912}
 --- !u!4 &1517735276
 Transform:
