@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class QuoteManager : MonoBehaviour
 {
     [SerializeField] List<Image> Quotes = new List<Image>();
-    [SerializeField] List<RectTransform> QuoteTexts = new List<RectTransform>();
     [SerializeField] int quoteNum;
     bool displayingQuote = false;
     [SerializeField] float DisplayTime = 5f;
@@ -42,24 +41,5 @@ public class QuoteManager : MonoBehaviour
         Quotes[quoteNum].gameObject.SetActive(true);
         displayingQuote = true;
         startTime = Time.time;
-    }
-
-    public void FlipQuote(string dir)
-    {
-        foreach (RectTransform quotetext in QuoteTexts)
-        {
-            if(dir == "left")
-            {
-                quotetext.localScale = new Vector3(-1, 1, 1);
-            }
-            else if(dir == "right")
-            {
-                quotetext.localScale = new Vector3(1, 1, 1);
-            }
-            else
-            {
-                Debug.Log("No dir in FlipQuote!");
-            }
-        }
     }
 }

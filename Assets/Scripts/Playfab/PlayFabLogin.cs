@@ -65,11 +65,29 @@ public class PlayFabLogin : MonoBehaviour
         {
             StatisticName = "HighScore",
             StartPosition = 0,
-            MaxResultsCount = 5
+            MaxResultsCount = 10
         }, result => DisplayLeaderboard(result), FailureCallback2);
     }
 
+    public void GetCurrentHighScore()
+    {
+        PlayFabClientAPI.GetLeaderboard(new GetLeaderboardRequest
+        {
+            StatisticName = "HighScore",
+            StartPosition = 0,
+            MaxResultsCount = 1,
+            ProfileConstraints = new PlayerProfileViewConstraints { ShowDisplayName = true}
+        }, result => HighScores(result), FailureCallback2);
+    }
 
+    private void HighScores(GetLeaderboardResult result)
+    {
+
+        foreach (var entry in result.Leaderboard)
+        {
+            Debug.Log(entry.DisplayName + entry.StatValue);
+        }
+    }
     private void FailureCallback2(PlayFabError error)
     {
         Debug.LogWarning("Something went wrong with your API call. Here's some debug information:");

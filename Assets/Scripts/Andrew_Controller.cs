@@ -42,7 +42,7 @@ public class Andrew_Controller : MonoBehaviour
 
     public void Run(string dir)
     {
-        GameObject.Find("QuoteManager").GetComponent<QuoteManager>().FlipQuote(dir);
+        //GameObject.Find("QuoteManager").GetComponent<QuoteManager>().FlipQuote(dir);
         if(dir == "left" && this.transform.position.x >= -12.6f)
         {
             RunningAndrew.SetActive(true);

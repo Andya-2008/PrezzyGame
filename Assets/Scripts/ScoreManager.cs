@@ -6,6 +6,7 @@ public class ScoreManager : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI text;
     [SerializeField] public int score;
+    [SerializeField] QuoteManager Quotes;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,10 @@ public class ScoreManager : MonoBehaviour
     public void AddScore(int pointsAdded)
     {
         score += pointsAdded;
+        if(score % 10 == 0)
+        {
+            Quotes.NextQuote();
+        }
         /*if (score % 5 == 0)
         {
             GameObject.Find("GameManager").GetComponent<GameManager>().UpdateWave();

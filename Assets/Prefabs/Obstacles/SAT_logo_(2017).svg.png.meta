@@ -184,7 +184,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SAT_logo_(2017).svg_0: -4069258549194082736
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
