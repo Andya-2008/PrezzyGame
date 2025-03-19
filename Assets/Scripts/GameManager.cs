@@ -8,6 +8,7 @@ using UnityEngine.Playables;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] GameObject Andrew;
+    [SerializeField] Canvas gameOverCanvas;
     [SerializeField] Animator AndrewAnimator;
     [SerializeField] List<PlayableDirector> TutorialTexts = new List<PlayableDirector>();
     
@@ -21,6 +22,7 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+        Time.timeScale = 1;
         startedGame = true;
         Andrew.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
         AndrewAnimator.enabled = true;
@@ -28,6 +30,22 @@ public class GameManager : MonoBehaviour
         {
             text.Play();
         }
+    }
+
+    public void GameOver()
+    {
+        gameOverCanvas.enabled = true;
+        Time.timeScale = 0;
+        GetComponent<SubmitScore>().SubmitScoreToServer(GetComponent<ScoreManager>().score);
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(1);
+    }
+    public void ShowLeaderboard()
+    {
+        SceneManager.LoadScene(0);
     }
 
     /*

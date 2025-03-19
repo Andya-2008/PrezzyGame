@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TitleId: 1C2F07
   DeveloperSecretKey: Q5OD6WMGBMBW6MZUSBNTUXAGTDX6TCDDWCTKSGX9GQQ4465BNG
-  ProductionEnvironmentUrl: 'https://1C2F07.playfabapi.com '
-  RequestType: 2
+  ProductionEnvironmentUrl: https://1C2F07.playfabapi.com
+  RequestType: 0
   DisableDeviceInfo: 0
   DisableFocusTimeCollection: 0
   RequestTimeout: 2000

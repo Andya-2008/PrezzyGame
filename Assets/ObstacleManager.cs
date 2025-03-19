@@ -30,23 +30,20 @@ public class ObstacleManager : MonoBehaviour
             case "TSA":
                 targetObstacle = obstacles[4];
                 return;
-            case "Scioly":
+            case "SciOly":
                 targetObstacle = obstacles[5];
                 return;
-            case "NHS":
+            case "Robotics":
                 targetObstacle = obstacles[6];
                 return;
-            case "Robotics":
+            case "Environmental":
                 targetObstacle = obstacles[7];
                 return;
-            case "Environmental":
+            case "Nerds":
                 targetObstacle = obstacles[8];
                 return;
-            case "Nerds":
+            case "Athletes":
                 targetObstacle = obstacles[9];
-                return;
-            case "Sports":
-                targetObstacle = obstacles[10];
                 return;
             default:
                 targetObstacle = obstacles[0];

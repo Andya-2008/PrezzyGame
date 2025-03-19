@@ -18,6 +18,7 @@ public class DeathSquare : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             Debug.Log("Game Over");
+            GameObject.Find("GameManager").GetComponent<GameManager>().GameOver();
         }
     }
 }

@@ -13,7 +13,7 @@ public class EnemyText : MonoBehaviour
                 GetComponent<TextMeshProUGUI>().text = "Dress Code!";
                 return;
             case "Sophomores":
-                GetComponent<TextMeshProUGUI>().text = "The KCIA project!";
+                GetComponent<TextMeshProUGUI>().text = "Dress Code!";
                 return;
             case "Juniors":
                 GetComponent<TextMeshProUGUI>().text = "SATs!";
@@ -22,13 +22,10 @@ public class EnemyText : MonoBehaviour
                 GetComponent<TextMeshProUGUI>().text = "Calculus!";
                 return;
             case "TSA":
-                GetComponent<TextMeshProUGUI>().text = "Resumes!";
+                GetComponent<TextMeshProUGUI>().text = "The forms!";
                 return;
-            case "Scioly":
+            case "SciOly":
                 GetComponent<TextMeshProUGUI>().text = "Tesla STEM!";
-                return;
-            case "NHS":
-                GetComponent<TextMeshProUGUI>().text = "Dress Code!";
                 return;
             case "Robotics":
                 GetComponent<TextMeshProUGUI>().text = "Circuit Boards!";
@@ -39,7 +36,7 @@ public class EnemyText : MonoBehaviour
             case "Nerds":
                 GetComponent<TextMeshProUGUI>().text = "No WIFIs";
                 return;
-            case "Sports":
+            case "Athletes":
                 GetComponent<TextMeshProUGUI>().text = "Textbooks!";
                 return;
             default:
